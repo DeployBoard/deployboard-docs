@@ -2,7 +2,8 @@ site_name: 'DeployBoard Documentation'
 site_url: https://docs.deployboard.io/'
 repo_url: https://github.com/deployboard/deployboard-docs/
 repo_name: GitHub
-site_dir: docs/
+site_dir: site/
+docs_dir: docs/
 theme: readthedocs
 
 nav:
@@ -11,4 +12,4 @@ nav:
   - Usage: 'usage.md'
   - API Reference: 'api-reference.md'
   - Billing: 'billing.md'
-  - FAQ: 'faq'
+  - FAQ: 'faq.md'
