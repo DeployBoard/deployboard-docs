@@ -1,7 +1,13 @@
 # Billing
 
-The beginning of an awesome article...
+## Upgrade Your Plan
 
-# Okay
+To upgrade your plan from the Free tier, you will need to go to Settings > Subscription.
 
-This is more stuff
+You will need to enter in a credit card.
+
+Your billing cycle begins 1 month after the day you sign up.
+
+## Canceling
+
+To cancel your account, you can email support@deployboard.io.

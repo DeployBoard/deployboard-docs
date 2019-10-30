@@ -1,0 +1,14 @@
+site_name: 'DeployBoard Documentation'
+site_url: https://docs.deployboard.io/'
+repo_url: https://github.com/deployboard/deployboard-docs/
+repo_name: GitHub
+site_dir: docs/
+theme: readthedocs
+
+nav:
+  - Home: 'index.md'
+  - Quick Start: 'quick-start.md'
+  - Usage: 'usage.md'
+  - API Reference: 'api-reference.md'
+  - Billing: 'billing.md'
+  - FAQ: 'faq'
