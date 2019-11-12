@@ -24,6 +24,13 @@ DATA = {"app": "APP", "env": "Dev", "version": "1.0.0", "status": "Deploying" }
 curl -X POST -H "X-API-Key: your_api_key" -d "${DATA}" "https://api.deployboard.io/put"
 ```
 
+## Export Data
+
+You may find that you need to export your data from DeployBoard.  
+Visit https://app.deployboard.io/logs/ to see your logs. You will notice two links for DownloadCSV and Download JSON. Clicking the button will download the file.
+
+![DownloadCSV](img/downloadCSV.gif)
+
 ## Docker
 
 We also offer a Docker image so you don't have to use curl directly. This is efficient for deployment environments already using containers. <https://hub.docker.com/r/deployboard/deploy>
