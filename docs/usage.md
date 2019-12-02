@@ -20,7 +20,7 @@ curl -H "X-API-Key: your_api_key" "https://api.deployboard.io/put?app=APP&env=Pr
 If you are using the POST method, you will need to pass your data in as JSON.
 
 ```
-DATA = {"app": "APP", "env": "Dev", "version": "1.0.0", "status": "Deploying" }
+DATA='{"app": "APP", "env": "Dev", "version": "1.0.0", "status": "Deploying" }'
 curl -X POST -H "X-API-Key: your_api_key" -d "${DATA}" "https://api.deployboard.io/put"
 ```
 
