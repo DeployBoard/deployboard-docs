@@ -97,6 +97,12 @@ In this example below, we are deploying to our CI/Dev environment, so we don't h
 
 For example this will output `master:4d0r98wa` where `master` is the branch name, and `4d0r98wa` is the first 8 characters of the SHA.
 
+We use 3 steps for logging the deployment status:
+
+1. `Deploying` at the beginning.
+2. `Deployed` at the end.
+3. `Failed` in case of failure.
+
 ```
 jobs:
   build:
@@ -111,5 +117,10 @@ jobs:
       - name: DeployBoard - Deployed
         uses: docker://deployboard/deploy:1
         with:
-          args: ${{ secrets.DEPLOYBOARD_API_KEY }} APP Prod ${{ steps.get_version.outputs.VERSION }} Deployed
+          args: ${{ secrets.DEPLOYBOARD_API_KEY }} APP Dev ${{ steps.get_version.outputs.VERSION }} Deployed
+      - name: DeployBoard - Failed
+        if: failure()
+        uses: docker://deployboard/deploy:1
+        with:
+          args: ${{ secrets.DEPLOYBOARD_API_KEY }} APP Dev ${{ steps.get_version.outputs.VERSION }} Failed
 ```
