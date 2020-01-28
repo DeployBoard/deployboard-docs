@@ -8,7 +8,8 @@ You can put a message to the /put api endpoint. You will need to pass your API k
 
 ###### GET
 
-If you are using the GET method, you will need to pass your data into the url as query string parameters.
+If you are using the GET method, you will need to pass your data into the url as query string parameters.  
+NOTE: If your Application Name contains a space, you will need to replace it with a `+` character to form a properly formatted url.
 
 ```
 curl -H "X-API-Key: your_api_key" "https://api.deployboard.io/put?app=APP&env=Prod&version=1.0.0&status=Deploying"
