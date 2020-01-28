@@ -1,8 +1,6 @@
 # Quick Start
 
-The first time you log into DeployBoard you will be taken to your Dashboard with a sample application.
-
-By clicking the edit button you will be able to change the name of the Application.
+The first time you log into DeployBoard you will be taken to your Dashboard which will be empty. You will need to send your first deployment event that will create an Application automatically.
 
 When you send deployment data to DeployBoard, a few conditions could happen:  
 ```
